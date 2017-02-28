@@ -1,5 +1,5 @@
 {
-  "name": "giphyhubot",
+  "name": "BARTbot",
   "version": "0.0.0",
   "private": true,
   "author": "Luke Eisenberg <lukemichaeleisenberg@gmail.com>",
@@ -17,7 +17,9 @@
     "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.0",
-    "hubot-slack": "^4.3.2"
+    "hubot-slack": "^4.3.2",
+    "requirejs": "^2.3.3",
+    "xml2js": "^0.4.17"
   },
   "engines": {
     "node": "0.10.x"
