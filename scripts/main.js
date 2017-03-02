@@ -3,13 +3,12 @@ module.exports = function(robot) {
        var source = "USD";
        var destination = msg.match[1];
 
-       robot.http("http://apilayer.net/api/live?access_key=04544e85162580c08fa0c53e96664efc&source=" + "USLMAJDLS")
+       robot.http("http://apilayer.net/api/live?access_key=04544e85162580c08fa0c53e96664efc&destination=" + destination)
        .get()
        (function (err, res, body) {
            if (err !== 'null') {
              currencyObject = JSON.parse(body);
 
-             console.log("", currencyObject);
              if (currencyObject['error'] !== undefined) {
                return msg.reply("An error was encountered when accessing the API. Error:" + currencyObject['error']);
              }
